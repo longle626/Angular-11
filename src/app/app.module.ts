@@ -14,11 +14,13 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import { SearchBarComponent } from './Components/search-bar/search-bar.component';
+import { HomeComponent } from './Components/home/home.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchBarComponent
+    SearchBarComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
@@ -29,7 +31,9 @@ import { SearchBarComponent } from './Components/search-bar/search-bar.component
     MatFormFieldModule,
     MatTabsModule,
     MatIconModule,
-    MatSelectModule
+    MatSelectModule,
+    FormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
